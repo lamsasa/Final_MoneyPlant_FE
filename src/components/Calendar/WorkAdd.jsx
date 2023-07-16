@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlockLine from "../Common/BlockLine";
 import Modal from "../Common/Modal";
 import ClickButton from "../Common/ClickButton";
-import CalendarAxiosApi from "../../api/CalendarAPI";
+import CalendarAxiosApi from "../../api/CalendarAxiosAPI";
 import SelColor from "./SelColor";
 import SelType from "./SelType";
 
@@ -113,6 +113,7 @@ const WorkAdd = ({ isQuick }) => {
         payType,
         workStart,
         workEnd,
+        workTax,
         payday,
         colorId: contentId,
       });

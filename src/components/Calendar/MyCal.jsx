@@ -5,7 +5,7 @@ import Modal from "../Common/Modal";
 import AdminAll from "./AdminAll";
 import { ReactComponent as Right } from "../../assets/right.svg";
 import { ReactComponent as Left } from "../../assets/left.svg";
-import CalenderAPI from "../../api/CalendarAPI";
+// import CalenderAPI from "../../api/CalendarAxiosAPI";
 
 // 캘린더 API 적용
 import Calendar from "react-calendar";

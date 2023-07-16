@@ -31,7 +31,6 @@ const Mypage = () => {
     getMyPageList();
   }, []);
 
-
   return (
     <>
       <Header />
@@ -42,17 +41,11 @@ const Mypage = () => {
 
           <Display isMobile={isMobile}>
             <TagBox tag={"일정"}>
-              {myPageList.myScheduleDtoList &&
-                myPageList.myScheduleDtoList.map((data1) => (
-                  <Tag color={data1.myColor} detail={data1.myScName} />
-                ))}
+              <Tag color={1} detail={"졸려죽겠네"} width={"20%"} />
             </TagBox>
 
             <TagBox tag={"근무"}>
-              {myPageList.myWorkDtoList &&
-                myPageList.myWorkDtoList.map((data2) => (
-                  <Tag color={data2.myColor} detail={data2.myWkName} />
-                ))}
+              <Tag color={6} detail={"졸려죽겠네요"}width={"25%"} />
             </TagBox>
           </Display>
         </Box>

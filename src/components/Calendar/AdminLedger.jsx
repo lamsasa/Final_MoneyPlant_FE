@@ -18,13 +18,14 @@ const AdminLedger = ({ setValue }) => {
   return (
     <>
       {/* 가계부 */}
-      <Title>수입/지출</Title>
-      <BlinkingButton clickOn={openModal} />
+      <Button>
+        <BlinkingButton clickOn={openModal} />
+      </Button>
 
       {/* 모달 */}
       {modalOpen && (
         <Modal open={modalOpen} close={closeModal} width={"300px"}>
-          <CreateLedger value={setValue} />
+          <CreateLedger setValue={setValue} />
         </Modal>
       )}
     </>
@@ -39,7 +40,7 @@ export default AdminLedger;
 //   width: 100%;
 // `;
 
-const Title = styled.div`
-  display: flex;
+const Button = styled.div`
+  padding-top: 10px;
   width: 100%;
 `;
